@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sansita', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header span {
+    font-size: 1.5rem;
+}
+
+/* Main Styling */
+main {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li {
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #E11414;
+    color: white;
+}
+
+/* Card Styling */
+.card, .card2 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card, .card2 h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #bbb;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.week {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.week h3 {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.activity-links {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.activity-links h4 {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.activity-links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #E11414;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.activity-links a:last-child {
+    margin-right: 0;
+}
+
+.activity-links a:hover {
+    background-color: #bf0e0e;
+}
