@@ -113,3 +113,13 @@ footer {
     font-size: xx-small;
     padding: 10px;
 }
+
+h2, h1, a {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400
+}
