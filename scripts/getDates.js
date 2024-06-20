@@ -13,7 +13,6 @@ hamButton.addEventListener('click', () => {
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const card = document.querySelector(".card");
-const menu = document.querySelector("#menu");
 const card2 = document.querySelector(".card2");
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
