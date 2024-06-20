@@ -15,6 +15,8 @@ const main = document.querySelector("main");
 const card = document.querySelector(".card");
 const menu = document.querySelector("#menu");
 const card2 = document.querySelector(".card2");
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
 
 
 modeButton.addEventListener("click", () => {
@@ -23,7 +25,11 @@ modeButton.addEventListener("click", () => {
 		main.style.color = "#fff";
         card.style.background = "#000";
         card2.style.background = "#000";
-        menu.style.background = "fff";
+        menu.style.background = "#fff";
+        header.style.background = "#666";
+        footer.style.background = "#666";
+        header.style.color = "#fff";
+        footer.style.color = "#fff";
 
 		modeButton.textContent = "🔆";
 	} else {
@@ -31,7 +37,12 @@ modeButton.addEventListener("click", () => {
 		main.style.color = "#000";
         card2.style.background = "#fff";
         card.style.background = "#fff";
-        menu.style.background = "#f4f4f9"
+        menu.style.background = "#f4f4f9";
+        header.style.background = "#bbb";
+        footer.style.background = "#bbb";
+        header.style.color = "#000";
+        footer.style.color = "#000";
 		modeButton.textContent = "🕶️";
+        
 	}
 });

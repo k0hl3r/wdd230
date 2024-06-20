@@ -157,7 +157,7 @@ footer p {
 }
 
 #menu.open::before {
-	content: "///";
+    content: "X";
     color: black;
 }
 
