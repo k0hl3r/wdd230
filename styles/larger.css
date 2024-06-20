@@ -1,8 +1,13 @@
 @media (min-width: 768px) {
     /* Navigation Styling for Larger Screens */
     nav {
+        display: block;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    #menu {
+        display: none;
     }
 
     nav ul {
