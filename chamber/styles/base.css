@@ -135,6 +135,11 @@ p {
     text-align: center;
 }
 
+header h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .images img{
     width: 100%;
     height: auto;
@@ -147,6 +152,7 @@ p {
 
 .discover2 img {
     border: 10px solid #6a1212;
+    width: 60%;
 }
 
 @keyframes fade {

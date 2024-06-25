@@ -62,4 +62,9 @@
     .sidebar {
         grid-column: 1 / 2;
     }
+
+    .images img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
+
