@@ -179,16 +179,18 @@ header h2 {
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-    padding: 10px;
+    gap: 2px;
+    padding: 5px;
     border: 1px solid #ccc;
+    max-width: 100%;
 }
 
 .calendar .day {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     text-align: center;
     background-color: #f9f9f9;
+    font-size: 1.2em;
 }
 
 .calendar .header {
@@ -199,4 +201,12 @@ header h2 {
 .calendar .empty {
     background-color: transparent;
     border: none;
+}
+
+
+@media (max-width: 480px) {
+    .calendar .day, .calendar .header {
+        padding: 2px; /* Smaller padding for small screens */
+        font-size: 0.8em; /* Smaller font size for small screens */
+    }
 }
