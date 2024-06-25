@@ -1,6 +1,12 @@
-.images img {
-    display: block;
+main {
     margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
     background: #000;
     animation: fade 15s;
 }

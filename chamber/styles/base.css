@@ -99,7 +99,7 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
     color: #222544;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -122,4 +122,75 @@ h2, h1, a {
 p {
     font-family: "Roboto Slab", serif;
     font-weight: 400
+}
+
+.images {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e8ebee;
+}
+
+.images h2 {
+    text-align: center;
+}
+
+.images img{
+    width: 100%;
+    height: auto;
+    border: 10px solid #6a1212;
+    margin-bottom: 20px;
+    animation: fade 15s;
+}
+
+
+
+.discover2 img {
+    border: 10px solid #6a1212;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sidebar section {
+    background-color: #e8ebee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #222544;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.calendar .day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.calendar .header {
+    font-weight: bold;
+    background-color: #eee;
+}
+
+.calendar .empty {
+    background-color: transparent;
+    border: none;
 }

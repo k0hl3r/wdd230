@@ -54,4 +54,12 @@
     .card4 {
         grid-column: 3 / 4;
     }
+
+    .images {
+        grid-column: 2 / 4;
+    }
+
+    .sidebar {
+        grid-column: 1 / 2;
+    }
 }
