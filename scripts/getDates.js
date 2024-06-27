@@ -43,3 +43,15 @@ modeButton.addEventListener("click", () => {
         
 	}
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('pageVisits')) {
+        let visitCount = parseInt(localStorage.getItem('pageVisits'), 10);
+        visitCount++;
+        localStorage.setItem('pageVisits', visitCount);
+        document.getElementById('visitCount').textContent = visitCount;
+    } else {
+        localStorage.setItem('pageVisits', 1);
+        document.getElementById('visitCount').textContent = 1;
+    }
+});

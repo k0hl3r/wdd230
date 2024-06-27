@@ -16,6 +16,7 @@ body {
 
 /* Header Styling */
 header {
+    font-family: "Roboto";
     background-color: #bbb;
     display: flex;
     align-items: center;
@@ -37,7 +38,6 @@ header span {
 main {
     margin: 0 auto;
     max-width: 100%;
-    padding: 20px;
 }
 
 h1 {
@@ -112,7 +112,7 @@ footer p {
 }
 
 .week {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -126,7 +126,6 @@ footer p {
 .activity-links {
     display: flex;
     align-items: center;
-    margin-top: 5px;
 }
 
 .activity-links h4 {
@@ -136,7 +135,7 @@ footer p {
 
 .activity-links a {
     text-decoration: none;
-    padding: 8px 12px;
+    padding: 5px 10px;
     background-color: #E11414;
     color: white;
     border-radius: 5px;
@@ -165,11 +164,11 @@ footer p {
 	font-size: 1.5rem;
 	border: 0;
 	background-color: #f4f4f9;
- 	position: absolute;
     padding: 5px;
     border-radius: 5px;
-    margin-top: 5px;
-    margin-left: 5px;
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
 }
 
 #mode {
@@ -179,4 +178,45 @@ footer p {
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 2rem;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+	position: absolute;
+    top: 160%;
+    left: 2%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+    font-family: "Libre Baskerville";
+}
+
+.map {
+    margin: 20px 0;
+    text-align: center;
+    margin: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+}
+
+.card2 p {
+    text-align: center;
 }
