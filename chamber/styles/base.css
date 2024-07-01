@@ -302,3 +302,8 @@ header h1 {
 .membership-benefits p {
     margin-bottom: 0.5em;
 }
+
+form, .membership-benefits {
+    flex: 1 1 100%;
+    margin-bottom: 1em;
+}
