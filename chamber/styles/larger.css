@@ -75,6 +75,10 @@
     .membership-benefits {
         grid-column: 2 / 4;
     }
+
+    .thankyoumsg {
+        grid-column: 2 / 3;
+    }
     
     
     @media (max-width: 768px) {
