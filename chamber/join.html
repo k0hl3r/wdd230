@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Kohler Pratt - Course Assignment Chamber Join">
+    <meta name="author" content="Kohler Pratt">
+
+    <meta property="og:title" content="Join the Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C5622AQHIkMQVe6Ko7Q/feedshare-shrink_800/0/1672950891113?e=2147483647&v=beta&t=URbJ4MvIxjLvBVvDUTfGnNsC9wxb2bbxAvEh6iCYaqo">
+    <meta property="og:url" content="https://k0hl3r.github.io/wdd230/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="favicon-two.ico">
+</head>
+<body>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#directory">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Join</h1>
+    </header>
+    <main>
+        <form action="thankyou.html" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="title">Title/Position:</label>
+            <input type="text" id="title" name="title" pattern="[a-zA-Z\s-]{7,}" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="1235551234" required>
+
+            <label for="organization">Business/Organization Name:</label>
+            <input type="text" id="organization" name="organization" required>
+
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership" required>
+                <option value="NP Membership">NP Membership (Non-profit, No fee)</option>
+                <option value="Bronze Membership">Bronze Membership</option>
+                <option value="Silver Membership">Silver Membership</option>
+                <option value="Gold Membership">Gold Membership</option>
+            </select>
+
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <input type="submit" value="Become a Member">
+        </form>
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <h3>NP Membership:</h3> <p>Access to all non-profit events and resources at no cost.</p>
+                <h3>Bronze Membership:</h3> <p>Includes event discounts, basic advertising, and training sessions.</p>
+                <h3>Silver Membership:</h3> <p>All Bronze benefits plus enhanced advertising and additional training sessions.</p>
+                <h3>Gold Membership:</h3> <p>All Silver benefits plus premium advertising, special events, and exclusive offers.</p>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>Contact Info: 480-888-1709 | 22246 S Ellsworth Rd, Queen Creek, AZ 85142</p>
+        <p>&copy;Kohler Dean Pratt, WDD Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>

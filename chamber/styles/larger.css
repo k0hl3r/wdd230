@@ -68,3 +68,26 @@
     }
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form {
+    flex: 1 1 48%;
+}
+
+.membership-benefits {
+    flex: 1 1 48%;
+}
+
+
+@media (max-width: 768px) {
+    form, .membership-benefits {
+        flex: 1 1 100%;
+        margin-bottom: 1em;
+    }
+}
+
+
