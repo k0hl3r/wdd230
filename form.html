@@ -38,18 +38,18 @@
     </nav>
     <main>
         <form action="record.html" method="get">
-            <label for="username">Username
+            <label for="username">Username*
                 <input type="text" id="username" name="username" required>
             </label>
-            <label for="password">Password
-                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+            <label for="password">Password*
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" placeholder="8 characters alpha/numeric">
             </label>
-            <label for="confirmPassword">Password confirmation
+            <label for="confirmPassword">Password confirmation*
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
                 <span id="passwordError" style="display:none; color:red;">Passwords do not match</span>
             </label>
-            <label for="email">Email
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address">
+            <label for="email">Email*
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address" placeholder="example@byui.edu">
             </label>
             <label for="r">Page Rating</label>
             <div id="rangevalue">1</div>
