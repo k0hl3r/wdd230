@@ -16,6 +16,7 @@ const card = document.querySelector(".card");
 const card2 = document.querySelector(".card2");
 const header = document.querySelector("header");
 const footer = document.querySelector("footer");
+const label = document.querySelector("label");
 
 
 modeButton.addEventListener("click", () => {
@@ -55,3 +56,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('visitCount').textContent = 1;
     }
 });
+

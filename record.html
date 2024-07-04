@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <img src="images/kohler.webp" alt="Profile Image" width="60" height="100" loading="lazy">
+        <span>Kohler D. Pratt</span>
+    </header>
+    <button id="menu"></button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="record">
+            <h1>Form Confirmation</h1>
+            <h2>Thank you for your form!</h2>
+            <div class="info">
+                <p>Username: <span id="username"></span></p>
+                <p>Email: <span id="email"></span></p>
+                <p>Page Rating: <span id="rating"></span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kohler Dean Pratt, Arizona United States</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script>
+        document.getElementById('username').innerText = new URLSearchParams(window.location.search).get('username');
+        document.getElementById('email').innerText = new URLSearchParams(window.location.search).get('email');
+        document.getElementById('rating').innerText = new URLSearchParams(window.location.search).get('r');
+    </script>
+</body>
+</html>

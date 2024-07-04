@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohler Pratt - WDD 230 - Web Frontend Development - Form</title>
+    <meta name="description" content="WDD 230 - Kohler Pratt - Course Assignment Form">
+    <meta name="author" content="Kohler Pratt">
+
+    <meta property="og:title" content="Kohler Pratt - WDD 230 - Web Frontend Development - Form">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C5622AQHIkMQVe6Ko7Q/feedshare-shrink_800/0/1672950891113?e=2147483647&v=beta&t=URbJ4MvIxjLvBVvDUTfGnNsC9wxb2bbxAvEh6iCYaqo" >
+    <meta property="og:url" content="https://k0hl3r.github.io/wdd230/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/kohler.webp" alt="Profile Image" width="60" height="100" loading="lazy">
+        <span>Kohler D. Pratt</span>
+    </header>
+    <button id="menu"></button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="record.html" method="get">
+            <label for="username">Username
+                <input type="text" id="username" name="username" required>
+            </label>
+            <label for="password">Password
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+            </label>
+            <label for="confirmPassword">Password confirmation
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span id="passwordError" style="display:none; color:red;">Passwords do not match</span>
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address">
+            </label>
+            <label for="r">Page Rating</label>
+            <div id="rangevalue">1</div>
+            <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            
+            <button type="submit">Record</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Kohler Dean Pratt, Arizona United States</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
