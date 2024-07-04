@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #f4f4f9;
+    --accent-color: #E11414;
+}
+
 body {
     font-family: "Roboto";
     background-color: var(--secondary-color);
