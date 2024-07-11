@@ -51,58 +51,18 @@
         <h1>WDD 230:Web Frontend Development</h1>
         <section class="card">
             <h2>Learning Activities</h2>
-            <div class="week">
-                <h3>Week 01:</h3>
-                <div class="activity-links">
-                    <a href="week01/holygrail.html">Layout</a>
-                    <a href="week01/media-query.html">Media Query</a>
-                    <a href="https://codepen.io/Kohler-Pratt/pen/bGyYpor">JS Pen</a>
-                </div>
-            </div>
-            <div class="week">
-                <h3>Week 02:</h3>
-                <div class="activity-links">
-                    <a href="week02/design.html">Design Principles</a>
-                    <a href="https://codepen.io/Kohler-Pratt/pen/wvbpbqG">Menu</a>
-                    <a href="week02/bom.html">BOM Top 10</a>
-                </div>
-            </div>
-            <div class="week">
-                <h3>Week 03:</h3>
-                <div class="activity-links">
-                    <a href="week03/images/landscape.webp">WebP Img</a>
-                    <a href="week03/lazyloading.html">Lazy Load</a>
-                    <a href="week03/responsive-images.html">Resp Img</a>
-                    <a href="week03/bom.html">Web Strg</a>
-                    
-                </div>
-                
-            </div>
-            <div class="week">
-                <h3>Week 04:</h3>
-                <div class="activity-links">
-                    <a href="week04/images/Week 4 Capture 1.JPG">Combinators</a>
-                    <a href="https://codepen.io/Kohler-Pratt/pen/OJYKPop">Pseudo</a>
-                    <a href="week04/tablebuild.html">Table</a>
-                    <a href="https://codepen.io/Kohler-Pratt/pen/vYwoOQp">Form</a>
-                    
-                </div>
-                
-            </div>
-            <div class="week">
-                <h3>Week 05:</h3>
-                
-            </div>
-            <div class="week">
-                <h3>Week 06:</h3>
-                
-                
+            <div id="learning-activities">
 
             </div>
         </section>
         <section class="card2">
             <h2>Information</h2>
-            <p>Weather information placeholder.</p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p><span id="current-temp"></span></p>
+            <p>-</p>
             <p>Number of visits: <span id="visitCount">0</span></p>
         </section>
         <div class="map">
@@ -114,5 +74,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
