@@ -89,7 +89,7 @@
     }
 
     #toggleView {
-        grid-column: 1 / 4; /* Span across all three columns */
+        grid-column: 1 / 4; 
         text-align: center;
         margin-bottom: 20px;
     }
@@ -107,9 +107,8 @@
         background-color: #222544;
     }
 
-    /* Adjust Directory Grid Layout */
     #directory {
-        grid-column: 1 / 4; /* Span across all three columns */
+        grid-column: 1 / 4; 
     }
 
     #directory.grid {
@@ -154,11 +153,11 @@
     
     
     .list .member img {
-        display: none; /* Hide the image in list view */
+        display: none; 
     }
     
     .list .member-info {
-        padding: 15px; /* Adjust padding for member info in list view */
+        padding: 15px; 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
@@ -169,7 +168,7 @@
     }
     
     .list .member-info p {
-        margin-bottom: 5px; /* Adjust margin for member details */
+        margin-bottom: 5px; 
         text-align: center;
     }
     

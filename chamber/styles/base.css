@@ -342,15 +342,15 @@ form, .membership-benefits {
 
 
 .list .member img {
-    display: none; /* Hide the image in list view */
+    display: none;
 }
 
 .list .member-info {
-    padding: 0; /* Adjust padding for member info in list view */
+    padding: 0; 
 }
 
 .list .member-info h2 {
-    margin-bottom: 10px; /* Adjust margin for member name */
+    margin-bottom: 10px; 
 }
 
 
