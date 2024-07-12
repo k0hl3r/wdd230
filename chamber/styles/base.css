@@ -328,22 +328,50 @@ form, .membership-benefits {
 
 
 #directory.grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 1fr));
-    gap: 20px;
-    font-size: xx-small;
+    display: block
 }
 
-#directory.list {
-    display: block;
-}
-
-.member {
+.grid .member {
+    text-align: center;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.list .member img {
+    display: none; /* Hide the image in list view */
+}
+
+.list .member-info {
+    padding: 0; /* Adjust padding for member info in list view */
+}
+
+.list .member-info h2 {
+    margin-bottom: 10px; /* Adjust margin for member name */
+}
+
+
+
+.list .member-info a {
+    display: block;
+    margin-top: 10px;
+    color: #6a1212;
+    text-decoration: none;
+}
+
+.list .member-info a:hover {
+    text-decoration: underline;
+}
+
+.member {
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
 }
 
 .member img {
@@ -354,7 +382,6 @@ form, .membership-benefits {
 
 .member-info {
     padding: 15px;
-    text-align: center;
 }
 
 .member-info h2 {

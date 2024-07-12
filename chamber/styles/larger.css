@@ -119,14 +119,6 @@
         font-size: medium;
     }
 
-    .member {
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
     .member img {
         width: 100%;
         height: auto;
@@ -158,45 +150,37 @@
 
     #directory.list {
         display: block;
-        margin-left: 20%;
-        margin-right: 20%;
-        font-size: x-large;
     }
-
-    .list .member {
-        background-color: white;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-    }
-
+    
+    
     .list .member img {
-        width: 100%;
-        height: auto;
-        border-bottom: 1px solid #ccc;
+        display: none; /* Hide the image in list view */
     }
-
+    
     .list .member-info {
-        padding: 15px;
+        padding: 15px; /* Adjust padding for member info in list view */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-
+    
     .list .member-info h2 {
-        margin: 0 0 10px;
+        margin-top: auto;
+        font-size: large;
     }
-
+    
     .list .member-info p {
-        margin: 5px 0;
+        margin-bottom: 5px; /* Adjust margin for member details */
+        text-align: center;
     }
-
+    
     .list .member-info a {
-        display: inline-block;
+        display: block;
         margin-top: 10px;
         color: #6a1212;
         text-decoration: none;
+        text-align: center;
     }
-
+    
     .list .member-info a:hover {
         text-decoration: underline;
     }
