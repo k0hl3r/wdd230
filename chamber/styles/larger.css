@@ -87,4 +87,118 @@
             margin-bottom: 1em;
         }
     }
+
+    #toggleView {
+        grid-column: 1 / 4; /* Span across all three columns */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #toggleView button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        background-color: #6a1212;
+        color: white;
+        cursor: pointer;
+    }
+
+    #toggleView button:hover {
+        background-color: #222544;
+    }
+
+    /* Adjust Directory Grid Layout */
+    #directory {
+        grid-column: 1 / 4; /* Span across all three columns */
+    }
+
+    #directory.grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 20px;
+        font-size: medium;
+    }
+
+    .member {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .member img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .member-info {
+        padding: 15px;
+    }
+
+    .member-info h2 {
+        margin: 0 0 10px;
+    }
+
+    .member-info p {
+        margin: 5px 0;
+    }
+
+    .member-info a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #6a1212;
+        text-decoration: none;
+    }
+
+    .member-info a:hover {
+        text-decoration: underline;
+    }
+
+    #directory.list {
+        display: block;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: x-large;
+    }
+
+    .list .member {
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .list .member img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .list .member-info {
+        padding: 15px;
+    }
+
+    .list .member-info h2 {
+        margin: 0 0 10px;
+    }
+
+    .list .member-info p {
+        margin: 5px 0;
+    }
+
+    .list .member-info a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #6a1212;
+        text-decoration: none;
+    }
+
+    .list .member-info a:hover {
+        text-decoration: underline;
+    }
 }
+

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Home Page</title>
-    <meta name="description" content="WDD 230 - Kohler Pratt - Course Assignment Chamber Home">
+    <title>Chamber of Commerce Directory</title>
+    <meta name="description" content="WDD 230 - Kohler Pratt - Course Assignment Chamber Directory">
     <meta name="author" content="Kohler Pratt">
 
-    <meta property="og:title" content="Chamber of Commerse Home Page">
+    <meta property="og:title" content="Chamber of Commerce Directory">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://media.licdn.com/dms/image/C5622AQHIkMQVe6Ko7Q/feedshare-shrink_800/0/1672950891113?e=2147483647&v=beta&t=URbJ4MvIxjLvBVvDUTfGnNsC9wxb2bbxAvEh6iCYaqo" >
-    <meta property="og:url" content="https://k0hl3r.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/C5622AQHIkMQVe6Ko7Q/feedshare-shrink_800/0/1672950891113?e=2147483647&v=beta&t=URbJ4MvIxjLvBVvDUTfGnNsC9wxb2bbxAvEh6iCYaqo">
+    <meta property="og:url" content="https://k0hl3r.github.io/wdd230/chamber/directory.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,9 +26,6 @@
     <link rel="icon" href="favicon-two.ico">
 </head>
 <body>
-    <header>
-        <img src="images/better-flag.JPG" alt="Hero Image">
-    </header>
     <button id="menu"></button>
     <nav class="navigation">
         <ul>
@@ -39,23 +36,12 @@
         </ul>
     </nav>
     <main>
-        <h1>Queen Creek Chamber of Commerce</h1>
-        <section class="card">
-            <h2>Current Weather</h2>
-            <p>Weather placeholder</p>
-        </section>
-        <section class="card2">
-            <h2>Community Info</h2>
-            <p>Information placeholder.</p>
-        </section>
-        <section class="card3">
-            <h2>Call to Action</h2>
-            <p>Calls to action placeholder.</p>
-        </section>
-        <section class="card4">
-            <h2>Business Spotlight</h2>
-            <p>Spotlight placeholder.</p>
-        </section>
+        <h1>Member Directory</h1>
+        <div id="toggleView">
+            <button id="gridView">Grid View</button>
+            <button id="listView">List View</button>
+        </div>
+        <div id="directory"></div>
     </main>
     <footer>
         <p>Contact Info: 480-888-1709 | 22246 S Ellsworth Rd, Queen Creek, AZ 85142</p>
@@ -63,5 +49,6 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

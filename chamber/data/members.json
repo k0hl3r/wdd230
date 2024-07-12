@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Handels",
+        "address": "21182 South Ellsworth Loop Road, Queen Creek, Arizona 85142",
+        "phone": "(480) 268-7563",
+        "website": "https://handelsicecream.com/store/queen-creek/",
+        "image": "images/Handels-Logo.jpg",
+        "membership": "Gold Membership"
+    },
+    {
+        "name": "Queen Creek Olive Mill",
+        "address": "25062 S Meridian Rd, Queen Creek, AZ 85142",
+        "phone": "(480) 888-9290",
+        "website": "https://www.queencreekolivemill.com/",
+        "image": "images/Olive-Mill-Logo.webp",
+        "membership": "Silver Membership"
+    },
+    {
+        "name": "Schnepf Farms",
+        "address": "24810 S Rittenhouse Rd, Queen Creek, AZ 85142",
+        "phone": "(480) 987-3100",
+        "website": "https://schnepffarms.com/",
+        "image": "images/Schnepf-Farms-Logo.jpg",
+        "membership": "Gold Membership"
+    },
+    {
+        "name": "Dave & Busters",
+        "address": "21000 S Ellsworth Loop Rd, Queen Creek, AZ 85142",
+        "phone": "(480) 212-1800",
+        "website": "https://www.daveandbusters.com/us/en/about/locations/queen-creek",
+        "image": "images/Dave-Logo.png",
+        "membership": "Bronze Membership"
+    },
+    {
+        "name": "Harkins Theatres",
+        "address": "20481 East Rittenhouse Rd, Queen Creek, AZ 85142",
+        "phone": "(480) 344-4111",
+        "website": "https://www.harkins.com/theatres/queen-creek-14/2024-07-11",
+        "image": "images/Harkins-Logo.jpg",
+        "membership": "Silver Membership"
+    },
+    {
+        "name": "Sushi Creek",
+        "address": "21805 S Ellsworth Rd #103, Queen Creek, AZ 85142",
+        "phone": "(480) 677-4333",
+        "website": "https://www.facebook.com/SushiCreek/",
+        "image": "images/Shushi-Creek-Logo.jpg",
+        "membership": "Bronze Membership"
+    },
+    {
+        "name": "Old Ellsworth Brewing Company",
+        "address": "22005 S Ellsworth Rd, Queen Creek, AZ 85142",
+        "phone": "(480) 935-2796",
+        "website": "https://www.oldellsworthbrewing.com/",
+        "image": "images/Brew-Logo.png",
+        "membership": "Gold Membership"
+    }
+]
+
