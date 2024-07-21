@@ -27,7 +27,7 @@
 </head>
 <body>
     <header>
-        <img src="images/better-flag.JPG" alt="Hero Image">
+        <img src="images/queen-creek.JPG" alt="Hero Image">
     </header>
     <button id="menu"></button>
     <nav class="navigation">
@@ -39,22 +39,35 @@
         </ul>
     </nav>
     <main>
+        <div id="banner" class="banner">
+            <p>Join us for the Chamber of Commerce meet and greet on WEDNESDAY at 7:00 p.m.</p>
+            <button id="close-banner" class="close-banner">X</button>
+        </div>
         <h1>Queen Creek Chamber of Commerce</h1>
         <section class="card">
             <h2>Current Weather</h2>
-            <p>Weather placeholder</p>
+            <figure>
+                <img id="weather-icon" src="placeholder" alt="placeholder">
+                <figcaption></figcaption>
+            </figure>
+            <p><span id="current-temp"></span></p>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast" class="forecast-container"></div>
         </section>
         <section class="card2">
-            <h2>Community Info</h2>
-            <p>Information placeholder.</p>
+            <h2>Business Spotlight</h2>
+            <div id="spotlight-container"></div>
+            <p>All members listed are among our Gold & Silver Membership holders. If you would like to become a member, consider <a href="join.html">joining</a> our community.</p>
         </section>
         <section class="card3">
-            <h2>Call to Action</h2>
-            <p>Calls to action placeholder.</p>
+            <h2>Current Events</h2>
+            <h3>You can find Current Events along with other information here on our discover page.</h3>
+            <a href="discover.html">DISCOVER!</a>
         </section>
         <section class="card4">
-            <h2>Business Spotlight</h2>
-            <p>Spotlight placeholder.</p>
+            <h2>Call to Action</h2>
+            <h3>We need you to help grow our community!</h3>
+            <a href="join.html">JOIN!</a>
         </section>
     </main>
     <footer>
@@ -63,5 +76,8 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

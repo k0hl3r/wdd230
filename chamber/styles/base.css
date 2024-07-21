@@ -6,6 +6,7 @@
 
 header {
     background-color: #ece9d5;
+    padding-bottom: 0%;
     
 }
 
@@ -37,6 +38,7 @@ header img {
     list-style: none;
     align-items: center;
     background-color: #6a1212;
+    padding-top: 0%;
 }
 
 .navigation ul {
@@ -204,6 +206,11 @@ header h2 {
 }
 
 .discover5 h3 {
+    text-decoration: underline;
+}
+
+.card h3 {
+    margin-top: 20px;
     text-decoration: underline;
 }
 
@@ -403,3 +410,82 @@ form, .membership-benefits {
 .member-info a:hover {
     text-decoration: underline;
 }
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-item {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.banner {
+    display: none; /* Initially hidden */
+    background-color: #6a1212;
+    color: #e8ebee;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.banner p {
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.close-banner {
+    background: none;
+    border: none;
+    color: #e8ebee;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.close-banner:hover {
+    background-color: #222544;
+    color: #e8ebee;
+}
+
+.card2 img{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card2 a{
+    text-decoration: none;
+    color: #6a1212;
+}
+
+.card4 a, .card3 a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: #6a1212;
+    border-radius: 5px;
+    color: #e8ebee;
+}
+
+.card4 a:hover, .card3 a:hover{
+    background-color: #222544;
+}
+
+.card4 h3, .card3 h3{
+    padding-bottom: 15px;
+}
+
+

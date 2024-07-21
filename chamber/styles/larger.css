@@ -55,6 +55,10 @@
         grid-column: 3 / 4;
     }
 
+    .banner {
+        grid-column: 1 / 4;
+    }
+
     .images {
         grid-column: 2 / 4;
     }
