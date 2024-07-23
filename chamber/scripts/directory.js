@@ -3,26 +3,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const gridViewBtn = document.getElementById('gridView');
     const listViewBtn = document.getElementById('listView');
 
-    // Initial load of members in grid view
+
     fetch('data/members.json')
         .then(response => response.json())
         .then(data => displayMembers(data, 'grid'));
 
-    // Event listener for grid view button
+
     gridViewBtn.addEventListener('click', function() {
         fetch('data/members.json')
             .then(response => response.json())
             .then(data => displayMembers(data, 'grid'));
     });
 
-    // Event listener for list view button
     listViewBtn.addEventListener('click', function() {
         fetch('data/members.json')
             .then(response => response.json())
             .then(data => displayMembers(data, 'list'));
     });
 
-    // Function to display members based on view mode
     function displayMembers(data, view) {
         directory.innerHTML = '';
         if (view === 'grid') {
